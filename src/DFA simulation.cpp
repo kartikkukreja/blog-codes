@@ -36,7 +36,7 @@ bool finalStates[MAX_DFA_STATES];
 char input_string[100000];
 
 int main()  {
-    int N, M, F, X, Y, A, state, symbol;
+    int N, M, F, X, Y, A, state, symbol, i, j;
     char* p;
 
     // read in the underlying DFA
