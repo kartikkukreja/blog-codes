@@ -1,5 +1,5 @@
 /*
- * Author : Kartik Kukreja
+ * Authors : Kartik Kukreja, Sushant Tyagi
  * Description :	Program to simulate a given DFA on an input string. It reads in the 
 			DFA from "DFA.txt" and the input strings from the console and prints out
 			whether the strings are accepted or rejected on the console.
