@@ -76,7 +76,7 @@ double dynamic_heuristic_evaluation_function(char grid[8][8])  {
 			if(grid[i][j] != '-')   {
 				for(k=0; k<8; k++)  {
 					x = i + X1[k]; y = j + Y1[k];
-					if(x >= 0 && x < bound_x && y >= 0 && y < bound_y && grid[x][y] == '-') {
+					if(x >= 0 && x < 8 && y >= 0 && y < 8 && grid[x][y] == '-') {
 						if(grid[i][j] == my_color)  my_front_tiles++;
 						else opp_front_tiles++;
 						break;
