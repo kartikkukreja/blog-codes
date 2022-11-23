@@ -73,7 +73,7 @@ stack<Point> grahamScan(Point *points, int N)    {
     for (int i = 3; i < N; i++) {
         Point top = hull.top();
         hull.pop();
-        while (ccw(hull.top(), top, points[i]) != -1)   {
+        while (!hull.empty() && ccw(hull.top(), top, points[i]) != -1)   {
             top = hull.top();
             hull.pop();
         }
